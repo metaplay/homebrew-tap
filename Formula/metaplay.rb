@@ -10,7 +10,7 @@ class Metaplay < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/metaplay/cli/releases/download/0.0.7/MetaplayCLI_Darwin_x86_64.tar.gz"
-      sha256 "e32bf578f90fd71e2c718054fc7354d3e4877f25e6738f6b69cc18b96b0f23c0"
+      sha256 "641e02bb5447d8b60e0120bf7fa47c89b73801508e02b53c9cc5a42f7de50286"
 
       def install
         bin.install "metaplay"
@@ -18,7 +18,7 @@ class Metaplay < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/metaplay/cli/releases/download/0.0.7/MetaplayCLI_Darwin_arm64.tar.gz"
-      sha256 "b082b8de0c35559d05e59a28a3eea4bd987bd2ead24fa5e557146582d56597a9"
+      sha256 "62e97002788719562943835a58571abd5cf4a6c68f2dd6c82fa5efc1075bdf99"
 
       def install
         bin.install "metaplay"
@@ -30,7 +30,7 @@ class Metaplay < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/metaplay/cli/releases/download/0.0.7/MetaplayCLI_Linux_x86_64.tar.gz"
-        sha256 "aa597e8fa7b0abc13c9be7d04941b4d01914fd3b0d45bf636a1324fe5e7340c8"
+        sha256 "a704927fb3ff8a2e90ba40978d81abc60bb23985b49b99b7dd8cb5cdb1ef16f8"
 
         def install
           bin.install "metaplay"
@@ -40,7 +40,7 @@ class Metaplay < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/metaplay/cli/releases/download/0.0.7/MetaplayCLI_Linux_arm64.tar.gz"
-        sha256 "15aceb6b75a7fcbfbb9c0906f3440e1c4104ca70d3d664ccbdce4d00c075fa4f"
+        sha256 "b2289eb3d8a752fe3ada2f8b50e8919b2d6459516c7ac644f3be8b6951499aa2"
 
         def install
           bin.install "metaplay"
