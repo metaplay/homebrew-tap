@@ -5,20 +5,20 @@
 class Metaplay < Formula
   desc "CLI tool to manage the Metaplay SDK in game projects, make cloud deployments, and more."
   homepage "https://www.metaplay.io/"
-  version "0.8.6"
+  version "0.9.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/metaplay/cli/releases/download/0.8.6/MetaplayCLI_Darwin_x86_64.tar.gz"
-      sha256 "eca3bc83945d065dbc95b7d3c50cf99e4e6e62112139a3cadd42c0e4f8664438"
+      url "https://github.com/metaplay/cli/releases/download/0.9.0/MetaplayCLI_Darwin_x86_64.tar.gz"
+      sha256 "552bb3f9b7244cfc3c02ff69a24a4f801e2b025ee338b29e51399c8774b45aba"
 
       def install
         bin.install "metaplay"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/metaplay/cli/releases/download/0.8.6/MetaplayCLI_Darwin_arm64.tar.gz"
-      sha256 "649cb9fa223be3ce3ed66d8a6d3932daaa9a7cccb9c3f65446e22329122ab17f"
+      url "https://github.com/metaplay/cli/releases/download/0.9.0/MetaplayCLI_Darwin_arm64.tar.gz"
+      sha256 "fb1abd2e0ce7e8334bb2373c9c681f3c8c21d0776a805d80761aa6c173462f62"
 
       def install
         bin.install "metaplay"
@@ -29,8 +29,8 @@ class Metaplay < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/metaplay/cli/releases/download/0.8.6/MetaplayCLI_Linux_x86_64.tar.gz"
-        sha256 "66f91c0720fdfa741250ac573fe7992760a95d19304178baa22f1e14fc63aeac"
+        url "https://github.com/metaplay/cli/releases/download/0.9.0/MetaplayCLI_Linux_x86_64.tar.gz"
+        sha256 "7f977298032c8bdf896b4100bc51d679fe06d03f92951f5ef12e855be16e1352"
 
         def install
           bin.install "metaplay"
@@ -39,8 +39,8 @@ class Metaplay < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/metaplay/cli/releases/download/0.8.6/MetaplayCLI_Linux_arm64.tar.gz"
-        sha256 "17170185db8c9c6e34a925171ead4c1101acdef8ad93b37cec5d41ef46c3a21f"
+        url "https://github.com/metaplay/cli/releases/download/0.9.0/MetaplayCLI_Linux_arm64.tar.gz"
+        sha256 "a9b6eeb52a438f40239b684a50496f26b27d16c599e1c67f75617a3f82c6abd8"
 
         def install
           bin.install "metaplay"
