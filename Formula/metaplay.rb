@@ -5,20 +5,20 @@
 class Metaplay < Formula
   desc "CLI tool to manage the Metaplay SDK in game projects, make cloud deployments, and more."
   homepage "https://www.metaplay.io/"
-  version "1.8.2"
+  version "1.8.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/metaplay/cli/releases/download/1.8.2/MetaplayCLI_Darwin_x86_64.tar.gz"
-      sha256 "376724d033553799773e4672fdc6ef79349998f61eac19c1d823ed0c2ef55596"
+      url "https://github.com/metaplay/cli/releases/download/1.8.3/MetaplayCLI_Darwin_x86_64.tar.gz"
+      sha256 "561a3de65f8836c236cc644f4f2b9237f6d75701b7be82d85dbe0cf156694075"
 
       def install
         bin.install "metaplay"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/metaplay/cli/releases/download/1.8.2/MetaplayCLI_Darwin_arm64.tar.gz"
-      sha256 "5da0db5edc3150cf82c90316d2c0a38dda16b4216a8bc4fef6fa9b4328d3db6d"
+      url "https://github.com/metaplay/cli/releases/download/1.8.3/MetaplayCLI_Darwin_arm64.tar.gz"
+      sha256 "9b842cd97da48997740042fc6825fc3a49ca3df18fe50dce4f228dfb7f86e9b5"
 
       def install
         bin.install "metaplay"
@@ -28,15 +28,15 @@ class Metaplay < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/metaplay/cli/releases/download/1.8.2/MetaplayCLI_Linux_x86_64.tar.gz"
-      sha256 "f6af67fe15ac7264e23c8994a6454ccfad879ee0655590b3013febc61af0bb84"
+      url "https://github.com/metaplay/cli/releases/download/1.8.3/MetaplayCLI_Linux_x86_64.tar.gz"
+      sha256 "1a73edf8b70dec08a7e36e4f1f1754c454921c8797f5822a2572fb0139fa3647"
       def install
         bin.install "metaplay"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/metaplay/cli/releases/download/1.8.2/MetaplayCLI_Linux_arm64.tar.gz"
-      sha256 "b932915cb506d7855f95f86b10e784c2d01750cc3a54ee5b53b299820f925c81"
+      url "https://github.com/metaplay/cli/releases/download/1.8.3/MetaplayCLI_Linux_arm64.tar.gz"
+      sha256 "595483a2d9e0e6951d9795dd79ff1fe5969a4344632b42799f83fe7a3d0f4a5e"
       def install
         bin.install "metaplay"
       end
